@@ -17,4 +17,4 @@ A basic amber webapp
 
 ## Inspiration and Thanks
 
-Project layout is key and I copied [Herby](https://github.com/herby) [trapped](https://github.com/herby/trapped). Thank you.
+Project layout is key and I copied [Herby's](https://github.com/herby)     [trapped Project](https://github.com/herby/trapped). Thank you.
