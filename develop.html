@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <title>Develop s WebApp</title>
+  <head>
+    <script src="/vendor/amber/js/amber.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      loadAmber({
+          files: ['AppCode.js'],
+          packageHome: 'lib/',
+          ready: function() {
+             smalltalk.AppCode._new()._begin();
+          }});
+    </script>
+  </body>
+</html>
