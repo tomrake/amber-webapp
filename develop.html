@@ -2,16 +2,17 @@
 <html>
   <title>Develop s WebApp</title>
   <head>
-    <script src="/vendor/amber/js/amber.js"></script>
+    <script src="bower_components/amber/support/requirejs/require.min.js"></script>
+    <script src="bower_components/amber/support/amber.js"></script>
   </head>
   <body>
     <script type="text/javascript">
-      loadAmber({
-          files: ['AppCode.js'],
-          packageHome: 'lib/',
-          ready: function() {
-             smalltalk.AppCode._new()._begin();
-          }});
+        require.config({paths: {'my_example_appcode': 'js','my_example_appcode/_source': 'st'}});
+        require(['amber/devel','my_example_appcode/AppCode'], function (smalltalk) {
+            smalltalk.defaultAmdNamespace = 'my_example_appcode';
+            smalltalk.initialize();
+            smalltalk.AppCode._new()._begin();
+        });
     </script>
   </body>
 </html>

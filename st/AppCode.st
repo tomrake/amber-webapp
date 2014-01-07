@@ -1,4 +1,4 @@
-Smalltalk current createPackage: 'AppCode' properties: #{}!
+Smalltalk current createPackage: 'AppCode'!
 Widget subclass: #AppCode
 	instanceVariableNames: ''
 	package: 'AppCode'!
